@@ -46,19 +46,18 @@ decoration: BoxDecoration(
  ),
 
  SingleChildScrollView(
-  scrollDirection: Axis.vertical,
-child:  Column(
+  child: Padding(
+    padding: EdgeInsets.only(top: 45),
+ child:  Column(
   children: [
-    Row(
-  children:[ 
-    SizedBox(width: 24),
-    Text('Origin Details',
+  const Text('Origin Details',
   textAlign: TextAlign.left,
   style: TextStyle(
     fontSize: 22,
     color: Colors.black,
 ),
-), ],),
+ 
+   ) ,
 Padding(padding: EdgeInsets.only(left: 7.5,top:5.5, right: 7.5),
 child:TextWidget(hintText: 'Address', 
   controller: _addressController),
@@ -73,73 +72,16 @@ child:
 TextWidget(hintText: 'Phone number', 
   controller: _phoneController),
   ),
-Padding(padding: EdgeInsets.only(left: 7.5, top:5.5, right: 7.5),
-child:
+  SizedBox(height: 5.5),
 TextWidget(hintText: 'Others', 
   controller: _othersController),
-),
-Row(
-  children:[ 
-    SizedBox(width: 24),
-    Text('Destination Details',
-  textAlign: TextAlign.left,
-  style: TextStyle(
-    fontSize: 22,
-    color: Colors.black,
-),
-), ],),
-Padding(padding: EdgeInsets.only(left: 7.5,top:5.5, right: 7.5),
-child:TextWidget(hintText: 'Address', 
-  controller: _addressController),
-),
-Padding(padding: EdgeInsets.only(left: 7.5,top:5.5, right: 7.5),
-child:
-TextWidget(hintText: 'State,Country', 
-  controller: _countryController),
-),
-  Padding(padding: EdgeInsets.only(left: 7.5,top:5.5, right: 7.5),
-child:
-TextWidget(hintText: 'Phone number', 
-  controller: _phoneController),
-  ),
-Padding(padding: EdgeInsets.only(left: 7.5, top:5.5, right: 7.5),
-child:
-TextWidget(hintText: 'Others', 
-  controller: _othersController),
-),
-Row(
-  children:[ 
-    SizedBox(width: 24),
-    Text('Package Details',
-  textAlign: TextAlign.left,
-  style: TextStyle(
-    fontSize: 22,
-    color: Colors.black,
-),
-), ],),
-Padding(padding: EdgeInsets.only(left: 7.5,top:5.5, right: 7.5),
-child:TextWidget(hintText: 'Address', 
-  controller: _addressController),
-),
-Padding(padding: EdgeInsets.only(left: 7.5,top:5.5, right: 7.5),
-child:
-TextWidget(hintText: 'State,Country', 
-  controller: _countryController),
-),
-  Padding(padding: EdgeInsets.only(left: 7.5,top:5.5, right: 7.5),
-child:
-TextWidget(hintText: 'Phone number', 
-  controller: _phoneController),
-  ),
-Padding(padding: EdgeInsets.only(left: 7.5, top:5.5, right: 7.5),
-child:
-TextWidget(hintText: 'Others', 
-  controller: _othersController),
-),
+
   ],
   ),
  ),
-      ],
+ ),
+
+ ],
   ),
   );
   
